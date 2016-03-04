@@ -1,0 +1,18 @@
+{
+    "name": "jamesbrowne/dynamic",
+    "authors": [
+        {
+            "name": "James Browne",
+            "email": "jb@jamesbrowne.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JamesBrowne\\GitLog\\": "src"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "5.0.*"
+    }
+}

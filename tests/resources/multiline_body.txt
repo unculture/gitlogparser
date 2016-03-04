@@ -1,0 +1,9 @@
+commit 2a3743b0fad84dbe78f8918420ff48545e04ab92
+Author: Ben Sampson <bbashy@users.noreply.github.com>
+Date:   Mon Oct 26 13:21:38 2015 +0000
+
+    PSR-2 formatting of User model?
+
+    > Lists of implements MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one interface per line.
+
+    https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md#41-extends-and-implements

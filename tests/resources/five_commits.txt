@@ -1,0 +1,35 @@
+commit 0da3df2afc22a305ad171be4ffe0ac2d49ae5b4d
+Merge: f748799 590593e
+Author: Taylor Otwell <taylorotwell@gmail.com>
+Date:   Wed Mar 2 14:42:42 2016 -0600
+
+    Merge pull request #3682 from jadjoubran/patch-1
+
+    Fixed order of password validation in registration
+
+commit 590593e0af1924627c195e66e1428b3348e0fb36
+Author: Jad Joubran <joubran.jad@gmail.com>
+Date:   Wed Mar 2 20:48:02 2016 +0100
+
+    Fixed order of password validation in registration
+
+commit f74879938f3c83b4e2d52483b02d391313a6bdad
+Merge: ec0e06e 789c75c
+Author: Taylor Otwell <taylorotwell@gmail.com>
+Date:   Tue Mar 1 20:16:51 2016 -0600
+
+    Merge pull request #3678 from themsaid/add-land-line-for-in_array
+
+    Add language line for the in_array validation rule
+
+commit 789c75c24ace662218d4656d3754fc343e34bac6
+Author: Mohamed Said <themohamedsaid@gmail.com>
+Date:   Tue Mar 1 17:15:58 2016 +0000
+
+    Add language line for the in_array validation rule
+
+commit ec0e06e7830aa0f7b76ecf1f1325be84ceabea06
+Author: Taylor Otwell <taylorotwell@gmail.com>
+Date:   Tue Mar 1 08:23:00 2016 -0600
+
+    cleaning up configs
