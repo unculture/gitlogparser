@@ -76,6 +76,8 @@ class GitLogParser
         $commit = new \stdClass;
 
         while ($line = fgets($resource)) {
+            // Switch on the type of line we've matched
+            // Note that the handle methods mutate the current commit
             switch($this->matchLine($line)) {
                 case self::COMMIT_START:
                     $commit = $this->handleCommitStartLine($commit, $line);
@@ -134,7 +136,10 @@ class GitLogParser
      */
     private function handleTextLine($line, $commit)
     {
+        // Trim the line
         $text = preg_replace('/(^\s+)|(\s*$)/u', "", $line);
+
+        // If we have a title already, it must be part of the body
         if (property_exists($commit, 'Title')) {
             if (!property_exists($commit, 'Body')) {
                 $commit->Body = '';
@@ -155,6 +160,7 @@ class GitLogParser
      */
     private function handleBlankLine($commit)
     {
+        // If there's a body already, this blank line is probably intentional, let's leave it in
         if (property_exists($commit, "Body")) {
             $commit->Body .= PHP_EOL;
         }
